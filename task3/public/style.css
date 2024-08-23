@@ -1,0 +1,99 @@
+
+
+body{
+    justify-content: center;
+    background-color: rgb(218, 231, 235);
+    margin-top: 10px;
+}
+.container-items{
+    width: 450px;
+    height: 620px;
+    background-color: rgb(181, 192, 230);
+    border-color:rgb(136, 136, 223);
+
+    margin-left: 400px;
+    margin-top: 5px;
+    box-shadow: inset;
+
+
+}
+img{
+    width: 100px;
+    margin-left: 180px ;
+    margin-top: 10px;
+    border-radius: 50%;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+}
+
+
+h1{
+    color:black;
+    text-align: center;
+    position: relative;
+    
+}
+h3{
+    text-align: center;
+    opacity: 60%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#menu>li{
+display: inline;
+font-size: 20px;
+
+opacity: 60%;
+
+position: relative;
+
+
+}
+#menu2>li{
+    display: inline;
+position: relative;
+    font-size: 20px;
+}
+
+p{
+    text-align: center;
+    opacity: 60%;
+    font-size:16px;
+}
+.grid-items{
+display: flex;
+/* grid-template-columns: auto auto auto auto; */
+ justify-content: center; 
+ 
+
+}
+.item1{
+    font-size: 30px;
+    color: rgb(116, 116, 240);
+    margin-right: 40px;
+
+}
+.item2{
+    font-size: 30px;
+    color: rgb(25, 136, 240);
+   margin-right: 40px; 
+}
+.item3{
+    font-size: 30px;
+    color:red;
+    margin-right: 20px;
+    
+}
+.item4{
+    font-size: 30px;
+    color: rgb(250, 26, 26);
+    margin-left: 10px;
+    
+}
+/* on click button/ */
+button:hover{
+    border:1px aqua;
+    /* color: aqua; */
+}

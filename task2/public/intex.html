@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMS</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-color: blueviolet;
+        border-radius: 5px;
+        position: relative;
+        margin-top: 60px;
+        padding-bottom: 10px;
+        
+        
+      }
+      .container1 {
+        padding: 10px;
+        background-color:lightskyblue;
+        width: 240px;
+        padding-left: 10px;
+        height: 470px;
+        border-radius: 10px;
+         padding-top: 25px;
+         padding-left: 20px;
+      }
+      .container2 {
+        padding: 10px;
+        background-color:lightskyblue;
+        width: 240px;
+        padding-left: 10px;
+        height: 470px;
+        border-radius: 10px;
+        padding-top: 25px;
+         padding-left: 20px;
+      }
+      .container3 {
+        padding: 10px;
+        background-color:lightskyblue;
+        width: 240px;
+        padding-left: 10px;
+        height: 470px;
+        border-radius: 10px;
+         padding-top: 25px;
+         padding-left: 20px;
+      }
+      #submit{
+        background-color: green;
+        border-radius: 5px;
+        width: 75px;
+        color: white;
+      }
+      #reset{
+        background-color: green;
+        border-radius: 5px;
+         width: 75px;
+         color: white;
+      }
+      #text,#datetime,#month{
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      #password,#email,#date,#week,#course,#textarea,#file,#box1{
+        border: 1px solid black;
+        border-radius: 5px;
+
+      }
+      #box1,#textarea{
+        height:40px;
+        width:200px;
+      }
+      #date,#month,#week,#course,#vol,#text,#password,#email,#datetime,#file{
+        width: 200px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="action_page.html">
+      <div class="grid-container">
+        <div class="container1">
+          <strong
+            ><label for="text Field" value="text field"
+              >Text Field</label
+            ></strong
+          ><br><br>
+          <input type="text" id="text" value="" /><br><br>
+          <strong
+            ><label for="password field" value="password field"
+              >password Field</label
+            ></strong
+          ><br><br>
+          <input type="password" id="password" value="" /><br><br>
+          <strong
+            ><label for="email field" value="Email Field"
+              >Email Field</label
+            ></strong
+          ><br><br>
+          <input type="email" id="email" value="" /><br><br>
+          <strong
+            ><label for="Date time field" value="date time field"
+              ><b>Date Time Field</b></label
+            ></strong
+          ><br><br>
+          <input type="datetime" id="datetime" value="" /><br><br>
+          <strong><label for="date field">Date Field</label></strong
+          ><br><br>
+          <input
+            type="date"
+            id="date"
+            placeholder="mm/dd/yy"
+            value=""
+          ><br><br>
+          <strong><label for="month field">Month Field</label></strong
+          ><br><br>
+          <input
+            type="month"
+            id="month"
+            placeholder=""
+            value="---mm------ ---"
+          /><br><br>
+        </div>
+        
+        <div class="container2">
+          <strong><label for="week field">Week Field</label></strong
+          ><br><br>
+          <input
+            type="week"
+            id="week"
+            placeholder="--week--"
+            --
+            value=""
+          /><br><br>
+          <strong><label for="select field">Select Field</label></strong
+          ><br><br>
+          <select type="course" id="course" placeholder="Bsc">
+            <option value="Bsc">Bsc</option>
+            <option value="Bca">Bca</option>
+            <option value="Bcom">Bcom</option></select
+          ><br><br>
+          <strong><label for="Check box">Check Box</label></strong
+          ><br><br>
+          <input type="checkbox" id="select" name="choose_option" value="option1" />
+          <label for="option">Option1</label><br>
+          <input type="checkbox" id="select"name="choose_option" value="option2" />
+          <label for="option">Option2</label><br>
+          <input type="checkbox" id="select" name="choose_option"value="option3" />
+          <label for="option">Option3</label><br><br>
+          <strong><label for="multiple field">Multiple Field</label></strong
+          ><br><br>
+            <select value="row2" id="box1" multiple>
+            <option>reading</option>
+            <option>drawing</option>
+            <option>writting</option>
+             <option>playing</option>
+             
+          </select>
+          <br><br>
+          <label for="text area">Text Area</label><br><br>
+          <textarea value="row2" id="textarea"></textarea><br><br>
+        </div>
+    
+        <div class="container3">
+          <strong
+            ><label for="radio field">Radio Field</label><br><br></strong>
+          <input type="radio" id="radio"name="choose_option1" value="option1" />
+          <label for="option">Option1</label><br>
+          <input type="radio" id="radio"name="choose_option1"  value="option2" />
+          <label for="option">Option2</label><br>
+          <input type="radio" id="radio"name="choose_option1"  value="option3" />
+          <label for="option">Option3</label><br><br>
+          <strong><label for="file field">File Field</label></strong
+          ><br><br>
+          <input type="file" id="File" value="file" /><br><br>
+          <strong><label for="Button field">Button Field</label></strong
+          ><br><br>
+          <input type="Submit" id="submit"><br><br>
+          <strong><label for="Reset Field">Reset Field</label></strong
+          ><br ><br >
+          <input type="reset" id="reset"><br><br>
+          <strong><label for="range field">Range Field</label></strong
+          ><br><br>
+          <input type="range" id="vol" name="vol" min="0" max="50">
+          <br><br>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
