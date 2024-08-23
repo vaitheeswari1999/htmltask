@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>purfume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body
+      
+      {
+        background-color:gray;
+      }
+      
+        .grid-container{
+            display:grid;
+            grid-template-columns: auto auto;
+            gap: none;
+            display:flex;
+            border-radius: 4px;
+            padding: 0px;
+            margin-left:auto;
+            border-color: 1px solid black;
+            position: relative;
+            margin-top: 80px;
+            /* margin-left: 200px; */
+            justify-content:center ;
+        }
+        .item1{
+          opacity: 60%;
+          padding: 5px;
+          font-size: 15px;
+          margin-bottom: 5px;
+          margin-top: 10px;
+        } 
+        .item2{
+          font-size: 20px;
+          padding: 10px;
+          margin-top: 5px;
+        }
+        .item3{
+          opacity: 60%;
+          padding: 10px;
+          font-size: 20px;
+         }
+         .item4{
+          color: green;
+          display: inline-flex;
+          font-size: 25px;
+          padding: 10px;
+          margin-top: 5px;
+         }
+         .item4>h5{
+          font-size: 20px;
+          padding-left: 5px;
+          padding-bottom: 15px;
+          
+
+         }
+         .item5{
+          background-color: green;
+          color: white;
+          width: 275px;
+          text-align: center;
+          padding:15px;
+          border-radius: 5px;
+          height: 55px;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-left: 5px;
+         }
+         img{
+          
+          border-radius: 5px;
+        
+         }
+         .grid-item1{
+          border-radius: 5px;
+          height: 476px;
+          width: 310px;
+          float: left;
+         }
+         .grid-item2{
+          padding-left: 10px;
+          background-color: beige;
+          border-radius: 4px;
+          padding-right: 10px;
+          
+         }
+         
+     @media only screen and (max-width: 640px) {
+  
+     .grid-container{
+    width: 100%;
+    grid-template-rows: auto auto;
+    display: block;
+    height:400px;
+    position: relative;
+    margin-top: 1px;
+    margin-left: 1px;
+     }
+     img{
+height: 300px;
+width: 350px;
+display:block;
+z-index: 2;
+position: relative;
+    
+}
+.grid-item2{
+  height: 800px;
+  width: 350px;
+  position: absolute;
+  z-index: 1;
+  padding-top: 300px;
+  
+}
+
+
+.item1>h3{
+  font-size: 15px;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding-top: 10px;
+}
+.item2{
+  font-size: 20px;
+  padding: 10px;
+}
+.item4>h2{
+  font-size: 15px;
+  padding: 10px;
+}
+.item3>h3{
+  font: size 10px;
+  padding: 10px;
+}
+.item5{
+  width: 90%;
+  height: 55px;
+  text-align: center;
+  padding: 15px;
+  margin-left: 10px;
+  
+}
+.item4>h5{
+  font-size: 20px;
+  padding:5px ;
+  
+}
+}
+     
+         
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+     <div class="grid-item1">
+      <img src="assets\image-product-desktop-600w.jpeg" alt="perfume" float="left" height="476px" width="310px">
+      </div>
+      <div class="grid-item2">
+        <div class="item1">
+        <h3 style=letter-spacing:3px>PERFUME</h3></div>
+        <div class="item2">
+        <h1>Gabrielle<br> Essence Eau De<br> Parfum</h1></div>
+        <div class="item3">
+        <h4>A Floral solar and voluptuous <br>interpretation composed by<br>oliver pulge perfumer creator<br>for the House of CHANNEL</h4></div>
+        <div class="item4">
+          <h2 style="font-size: 25px; ">$149.99</h2><h5 style="color: grey;"><sub><del>$349.99</del></sub></h5></div>
+          <div class="item5">
+            <h3><i class="fa-solid fa-cart-shopping" style="color: #fafafa;"></i>Add to cart</h3>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+    
+  </body>
